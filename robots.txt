@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://exitoadvogados.com.br/sitemap.xml
+
+# Bloquear áreas administrativas (futuras)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
