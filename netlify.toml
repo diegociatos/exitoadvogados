@@ -1,0 +1,74 @@
+# Configuracao de publicacao do site da Exito Advogados no Netlify.
+# O site e estatico: o "build" e apenas publicar a raiz do repositorio.
+
+[build]
+  publish = "."
+
+# ---------------------------------------------------------------- cache
+# HTML curto, para que uma correcao de texto apareca na hora.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Imagens, CSS e JS ficam um ano em cache. Ao trocar o conteudo de um desses
+# arquivos, mude o nome dele (ex.: style.css -> style.v2.css) para o navegador
+# do visitante buscar a versao nova.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ------------------------------------------------------------- seguranca
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# ------------------------------------------------------------- redirects
+# Pagina antiga que apenas avisava que Inventario e Usucapiao foram separados.
+[[redirects]]
+  from = "/teses/inventario-usucapiao.html"
+  to = "/teses/patrimonio.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/teses/inventario-usucapiao"
+  to = "/teses/patrimonio.html"
+  status = 301
+  force = true
+
+# Landing antiga de saude: ficou orfa e usa o cabecalho/rodape do design
+# anterior, entao um visitante que caisse nela via busca veria outro site.
+# O conteudo dela vale ser aproveitado dentro de /teses/saude.html.
+[[redirects]]
+  from = "/teses/saude-direitos.html"
+  to = "/teses/saude.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/teses/saude-direitos"
+  to = "/teses/saude.html"
+  status = 301
+  force = true

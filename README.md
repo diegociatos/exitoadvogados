@@ -1,210 +1,133 @@
-# Êxito Advogados — Site Premium
+# Êxito Advogados — site
 
-Site institucional e de conversão para a Êxito Advogados (nome fantasia de Garcia, Oliveira e Miranda Advogados Associados — OAB/MG nº 1263), marca do Grupo Ciatos voltada para pessoas físicas.
+Site institucional e de captação da **Êxito Advogados**, marca do Grupo Ciatos voltada a pessoas
+físicas (patrimônio, recuperação financeira, previdência, saúde e indenizações).
 
----
+- **Produção:** https://exitoadvogados.com.br
+- **Hospedagem:** Netlify, publicando a raiz do repositório. O domínio com `www` responde 301 para o
+  domínio sem `www`, que é o canônico usado em todo o site.
+- **Stack:** HTML, CSS e JavaScript puros. Não há build, dependências nem framework — abrir o
+  arquivo já é ver a página.
 
-## 📁 Estrutura do Projeto
+## Como rodar localmente
 
-```
-gom-site/
-├── index.html                          # Homepage premium
-├── sitemap.xml                         # Sitemap SEO (16 teses + blog)
-├── robots.txt                          # Diretivas para crawlers
-├── css/
-│   └── style.css                       # Design system completo (~1900 linhas)
-├── js/
-│   └── main.js                         # Interações + Bot IA "Sofia"
-├── images/
-│   ├── logo-horizontal.png             # Header/light
-│   ├── logo-vertical.png               # Outros usos
-│   └── logo-branca.png                 # Hero/footer/dark
-├── teses/
-│   ├── judicializacao-saude.html       # Tese modelo 1 (Saúde)
-│   └── consignado-indevido.html        # Tese modelo 2 (Financeiro)
-└── blog/
-    └── index.html                      # Listagem de artigos
+```bash
+python -m http.server 8899
 ```
 
----
+Depois abra `http://127.0.0.1:8899`. Um servidor é necessário (em vez de abrir o arquivo direto)
+porque o `404.html` e os ícones usam caminhos absolutos a partir da raiz.
 
-## 🎨 Design System
+## Estrutura
 
-**Paleta de cores (CSS variables em `:root`):**
-- `--gom-black: #0a0a0a` — Preto principal
-- `--gom-wine: #6b1e2a` — Vinho (vermelho da logo)
-- `--gom-gold: #c9a961` — Dourado sofisticado
-- `--gom-cream: #faf7f2` — Off-white de fundo
+```
+index.html            Home: hero, serviços por setor, método, formulário e artigos
+diagnostico.html      Formulário longo de captação
+obrigado.html         Confirmação de envio do formulário (noindex)
+privacidade.html      Política de Privacidade (LGPD)
+termos.html           Termos de Uso
+404.html              Página de erro servida pelo Netlify em qualquer caminho inválido
 
-**Tipografia:**
-- **Display:** Playfair Display (títulos)
-- **Serif (corpo):** Cormorant Garamond (com fallback para Book Antiqua)
-- **Sans:** Inter (UI, navegação, microcopy)
+teses/                24 páginas de serviço
+  patrimonio · financeiro · previdencia · saude · indenizacoes    -> 5 hubs de setor
+  inventario · usucapiao · regularizacao-imoveis · ...            -> 17 serviços
+  inventario-usucapiao · saude-direitos                           -> legado, com 301
 
-Toda a paleta e tipografia está centralizada em `css/style.css` no bloco `:root` — para mudanças globais, edite apenas lá.
+blog/                 index + 52 artigos
+css/
+  style.css           Base: variáveis, tipografia, header, hero, seções, footer
+  landing.css         Layout específico das páginas de tese
+  enhance.css         Camada de refinamento visual (ver "Cuidados" abaixo)
+js/
+  main.js             Menu mobile, agrupamento do rodapé, cards de serviço e de artigo
+  analytics.js        Medição de conversão (ver "Analytics" abaixo)
+images/               Assets do site em .webp + os PNGs originais, guardados como fonte
+tools/                Scripts de manutenção
+```
 
----
+## Cuidados ao editar
 
-## 🤖 Bot IA "Sofia"
+**`css/enhance.css` precisa ser o último stylesheet do `<head>`.** Ele carrega 110 regras que
+sobrescrevem `style.css` e `landing.css` de propósito. Se entrar antes de um dos dois, o layout
+muda. Em toda página nova, a ordem é: `style.css`, depois `landing.css` (se for página de tese),
+depois `enhance.css`.
 
-Bot conversacional como SDR jurídico premium, implementado em JS puro (sem dependências). Fluxo em 3 etapas conforme briefing:
+**Imagens são servidas em `.webp`.** Os PNGs em `images/` são os originais de alta resolução,
+mantidos como fonte para reencodar quando necessário — eles não são referenciados por nenhuma
+página. O master do logotipo é `logo-horizontal-premium.png`; dele saem o logo do site, o favicon
+e a imagem de compartilhamento.
 
-1. **Diagnóstico** — identifica o problema (financeiro, saúde, patrimônio, consignado, outro)
-2. **Consciência** — mostra risco/urgência/oportunidade conforme tese
-3. **Conversão** — captura nome + telefone, encaminha para WhatsApp oficial
+**`images/`, `css/` e `js/` têm cache de um ano** (configurado em `netlify.toml`). Ao mudar o
+*conteúdo* de um desses arquivos, mude também o nome (ex.: `style.css` → `style.v2.css`) e atualize
+as referências, senão o visitante que já esteve no site continuará vendo a versão antiga.
 
-**Fluxos implementados:** financial, health_inss, patrimony, consigned, other, urgent, qualify (popular), qualify_premium, getPhone, closing, whatsapp.
+**Toda página nova precisa de:** `<title>`, `<meta name="description">`, `<link rel="canonical">`,
+bloco Open Graph, os links de ícone e o `enhance.css`. Copie o `<head>` de uma página do mesmo tipo
+e ajuste. Depois rode os dois scripts de manutenção:
 
-**Para expandir:** edite o objeto `botFlow` em `js/main.js`. Cada estado tem `message`, `followUp`, `options` (com `next` apontando para próximo estado) e `freeText: true` para entrada livre.
+```bash
+python tools/gerar-sitemap.py
+python tools/checar-links.py
+```
 
----
+`gerar-sitemap.py` reescreve o `sitemap.xml` a partir dos arquivos que existem, pulando
+automaticamente o que estiver marcado como `noindex`. `checar-links.py` confere se todo `href` e
+`src` interno aponta para um arquivo real.
 
-## 📞 WhatsApp Oficial
+## Analytics
 
-Número configurado em todos os CTAs: **+55 31 9769-9387**
+`js/analytics.js` está no ar e **inativo por escolha**: a constante `GA4_ID` no topo do arquivo está
+vazia, então nada de terceiros é carregado e nenhum cookie é criado. Preencha com o ID do GA4
+(formato `G-XXXXXXXXXX`) para ligar a medição.
 
-URL base nos botões: `https://wa.me/5531976993871?text=...`
+Independente disso, os eventos já são empilhados em `window.dataLayer`, de onde um Google Tag
+Manager futuro pode lê-los sem precisar tocar nas 83 páginas. Eventos disparados:
 
-Cada CTA usa mensagem contextual (urgência diferente para saúde vs. consignado vs. consultoria geral).
+| Evento | Quando |
+|---|---|
+| `page_context` | Em toda visita, com a seção (home / tese / blog / institucional) |
+| `whatsapp_click` | Clique em qualquer CTA de WhatsApp, identificando de onde partiu |
+| `form_start` | Primeiro campo do formulário recebe foco |
+| `form_submit` | Envio do formulário, com a área de interesse escolhida |
+| `telefone_click` / `email_click` | Clique em `tel:` ou `mailto:` |
+| `scroll_depth` | 25%, 50%, 75% e 100% da página — mede se as teses são lidas |
 
----
+O arquivo respeita o sinal *Do Not Track* do navegador antes de carregar qualquer script externo.
 
-## 🔍 SEO Implementado
+## Formulários
 
-✅ **Schema.org** — `LegalService` em todas as páginas + `FAQPage` nas teses
-✅ **Open Graph** — todas as páginas
-✅ **Meta description** otimizada por página
-✅ **Sitemap.xml** com prioridades por tese
-✅ **Robots.txt** configurado
-✅ **Headings hierárquicos** (H1 > H2 > H3)
-✅ **FAQs estruturadas** para Featured Snippets
-✅ **URLs limpas e semânticas** (`/teses/judicializacao-saude.html`)
-✅ **Alt text** em todas as imagens
-✅ **Lazy loading**-ready
+Os dois formulários (`index.html` e `diagnostico.html`) usam **FormSubmit**, que entrega o conteúdo
+por e-mail em `grupociatos@grupociatos.com.br`. Campos de controle já configurados: `_next`
+(redireciona para `obrigado.html` após o envio), `_captcha=false`, `_template=table` e `_honey`
+(armadilha anti-spam). Há caixa de consentimento obrigatória apontando para a Política de
+Privacidade.
 
-**Próximos passos de SEO (depois do lançamento):**
-1. Implementar Google Analytics + Search Console
-2. Adicionar Google Tag Manager
-3. Configurar Google My Business para SEO local
-4. Conectar com Bing Webmaster Tools
-5. Adicionar reviews schema quando houver depoimentos verificados
+> O primeiro envio a partir de um domínio novo exige que a FormSubmit confirme o e-mail de destino.
+> Se os formulários pararem de entregar, é o primeiro lugar a checar.
 
----
+## Pendências de conteúdo
 
-## 📄 Páginas Pendentes para Lançamento Completo
+Estas não são falhas técnicas — são decisões de conteúdo que dependem do escritório:
 
-**Críticas (lançamento):**
-- [ ] 14 páginas de tese restantes (modelo: replicar `judicializacao-saude.html`)
-- [ ] Página "Sobre" detalhada (sócios, equipe, história)
-- [ ] Página de contato com formulário + mapa
-- [ ] Página política de privacidade (LGPD)
-- [ ] Página termos de uso
+1. **Os 52 artigos do blog são o mesmo texto repetido.** Comparados entre si, os corpos são de 97,8%
+   a 99,8% idênticos: um modelo de ~3.200 palavras onde só o nome do tema muda. Estão marcados como
+   `noindex` e fora do sitemap para não caracterizar conteúdo em escala perante o Google. Só
+   `protecao-civil-saude-mental.html` tem texto próprio. Precisam ser reescritos ou removidos.
+2. **As 3 perguntas frequentes são iguais nas 17 teses** ("Meu caso precisa ir para a Justiça?",
+   "Posso falar com um advogado antes de decidir?", "Quanto tempo demora?"). Perguntas reais e
+   específicas por tese valem mais e habilitam marcação `FAQPage`.
+3. **Os 5 hubs de setor são páginas magras** — hero mais uma grade de cartões, sem texto. O conteúdo
+   da antiga `teses/saude-direitos.html` (hoje com 301) é bom material para engordar o hub de saúde.
+4. **Confirmar a razão social.** O rodapé, a Política de Privacidade e os Termos dizem "Garcia,
+   Oliveira e Miranda Advogados Associados". O cadastro do grupo registra a sociedade de advogados
+   como "Garcia, Oliveira e Silva Advogados Associados" (OAB/MG nº 1263). Se a Êxito for outra
+   sociedade, é preciso o CNPJ e o número de registro dela na OAB.
+5. **Página "Sobre" e página de contato com mapa** ainda não existem.
+6. **Publicidade na advocacia.** O conteúdo atual está sóbrio, sem promessa de resultado nem
+   honorário exposto. Manter esse critério ao escrever qualquer texto novo, conforme o Provimento
+   nº 205/2021 do Conselho Federal da OAB.
 
-**Crescimento (pós-lançamento):**
-- [ ] 8-12 artigos de blog reais (cluster semântico por tese)
-- [ ] Páginas long-tail programáticas (ex: "advogado plano de saúde em Belo Horizonte", "advogado consignado em [bairro]")
-- [ ] Cases de sucesso anonimizados
-- [ ] Glossário jurídico (gera autoridade + cauda longa)
+## Contatos
 
-**Como replicar páginas de tese:**
-1. Copie `teses/judicializacao-saude.html` ou `teses/consignado-indevido.html`
-2. Atualize: `<title>`, `<meta description>`, `<meta keywords>`, OG tags
-3. Substitua o conteúdo do `.tese-hero` e `.tese-content`
-4. Adapte FAQs específicas da nova tese
-5. Atualize o Schema.org `LegalService` e `FAQPage`
-6. Adicione no `sitemap.xml`
-
----
-
-## ⚡ Performance / Core Web Vitals
-
-**Otimizações aplicadas:**
-- CSS único e enxuto (sem frameworks)
-- JS vanilla (sem React/jQuery)
-- Fontes Google com `preconnect`
-- Logos PNG otimizados
-- Lazy-loading de animações via Intersection Observer
-- Sem dependências externas pesadas
-
-**Para garantir 90+ no PageSpeed:**
-1. Comprimir os PNGs com TinyPNG ou converter para WebP
-2. Adicionar atributo `loading="lazy"` em imagens abaixo da fold
-3. Servir via CDN (Cloudflare é gratuito)
-4. Habilitar HTTP/2 e Brotli no servidor
-5. Configurar cache headers (1 ano para CSS/JS/imagens com hash)
-
----
-
-## 🚀 Deploy Recomendado
-
-**Opção 1 — Hospedagem tradicional (simples):**
-- Subir todos os arquivos via FTP para a hospedagem (Locaweb, Hostgator, etc.)
-- Configurar SSL/HTTPS
-- Apontar domínio `gomadvogados.com.br`
-
-**Opção 2 — Premium (recomendado):**
-- Deploy na **Vercel** ou **Netlify** (grátis, com CDN global)
-- Cloudflare para DNS + cache + WAF
-- Performance imbatível, deploy contínuo via Git
-
-**Opção 3 — WordPress (se preferir CMS):**
-- Migrar estrutura para WordPress mantendo o design
-- Plugins: RankMath SEO, WP Rocket, Schema Pro
-- Cuidado: pode comprometer performance se mal configurado
-
----
-
-## 📊 Métricas para Acompanhar
-
-Após o lançamento, monitorar mensalmente:
-
-**SEO:**
-- Posicionamento de palavras-chave principais (use Semrush ou Ahrefs)
-- Tráfego orgânico mensal
-- CTR por página de tese
-- Backlinks ganhos
-
-**Conversão:**
-- Cliques no botão WhatsApp (Google Analytics events)
-- Mensagens recebidas via WhatsApp (taggear origem)
-- Conversas iniciadas pelo bot Sofia
-- Taxa de conversa→reunião→contrato
-
-**Performance:**
-- Core Web Vitals (PageSpeed Insights)
-- Tempo de carregamento mobile
-- Taxa de rejeição por página
-
----
-
-## 🛠️ Manutenção e Próximas Iterações
-
-**Mensal:**
-- Publicar 2-4 artigos no blog (rotacionar entre as 5 verticais)
-- Atualizar depoimentos quando houver
-- Revisar metas e CTAs por dados
-
-**Trimestral:**
-- Auditoria SEO técnico
-- Atualizar Schema.org com novos casos
-- Otimizar imagens novas
-
-**Anual:**
-- Revisão visual e brand evolution
-- Atualização do bot IA com novos fluxos baseados em conversas reais
-- Adicionar funcionalidades (calculadoras jurídicas, simuladores, etc.)
-
----
-
-## 📞 Contatos
-
-**Escritório:**
-Êxito Advogados Associados
-Rua Guaicui, 715, Sala 203-207
-Luxemburgo, Belo Horizonte/MG
-+55 31 9769-9387
-
----
-
-**Versão:** 1.0 (Lançamento)
-**Data:** Maio/2026
+Êxito Advogados — Rua Guaicuí, 715, salas 203 a 207, Luxemburgo, Belo Horizonte/MG, CEP 30380-342
+WhatsApp (31) 97699-3871 · grupociatos@grupociatos.com.br
