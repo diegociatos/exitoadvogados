@@ -117,6 +117,8 @@ def montar(meta, corpo, servicos):
     # campo `extras: slug=Titulo`; a descricao vem do <meta> da propria pagina
     for item in meta.get('extras', []):
         slug_extra, _, titulo_extra = item.partition('=')
+        if slug_extra.strip() in {s['slug'] for s in meus}:
+            continue        # a pagina ja foi convertida para conteudo/servicos/
         pagina = open('teses/%s.html' % slug_extra.strip(), encoding='utf-8').read()
         d = re.search(r'<meta name="description" content="(.*?)"', pagina, re.S)
         meus.append({'slug': slug_extra.strip(), 'h1': titulo_extra.strip(),
