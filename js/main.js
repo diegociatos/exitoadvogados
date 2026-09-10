@@ -115,7 +115,10 @@ const serviceData = {
   'financeiro': { icon: 'F', desc: 'Analise cobranças, contratos e riscos patrimoniais.' },
   'previdencia': { icon: 'R', desc: 'Planeje benefícios e corrija negativas do INSS.' },
   'saude & direitos': { icon: 'S', desc: 'Atue contra negativas, abusos e bloqueios de acesso.' },
-  'indenizacoes': { icon: 'I', desc: 'Busque reparação por prejuízos e falhas de serviço.' }
+  'indenizacoes': { icon: 'I', desc: 'Busque reparação por prejuízos e falhas de serviço.' },
+  'familia e sucessoes': { icon: 'F', desc: 'Divórcio, pensão, guarda e união estável com segurança.' },
+  'trabalho': { icon: 'T', desc: 'Cobre o que a empresa deixou de pagar, dentro do prazo.' },
+  'consumidor': { icon: 'C', desc: 'Reaja a cobranças, golpes e falhas de empresas e bancos.' }
 };
 
 const normalizeText = value => value

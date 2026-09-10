@@ -100,8 +100,15 @@ def ler(caminho):
             continue
         k, v = linha.split(':', 1)
         v = v.strip()
-        meta[k.strip()] = [x.strip() for x in v.split(',') if x.strip()] \
-            if k.strip() in ('relacionados', 'palavras') else v
+        chave = k.strip()
+        if chave == 'extras':
+            # 'slug=Titulo, slug=Titulo': so quebra na virgula que antecede outro slug=,
+            # porque o titulo pode ter virgula ('Acidentes em Uber, 99 e Aplicativos')
+            meta[chave] = [x.strip() for x in re.split(r',\s*(?=[\w-]+=)', v) if x.strip()]
+        elif chave in ('relacionados', 'artigos', 'servicos'):
+            meta[chave] = [x.strip() for x in v.split(',') if x.strip()]
+        else:
+            meta[chave] = v
     return meta, m.group(2).strip()
 
 
@@ -122,6 +129,7 @@ CABECA = re.search(r'<header class="topbar">.*?</header>', base, re.S).group(0)
 RODAPE = re.search(r'<footer class="footer">.*?</footer>', base, re.S).group(0)
 CAUDA = base[base.index('</footer>') + len('</footer>'):]
 for a, b in [('href="index.html"', 'href="../index.html"'),
+             ('href="index.html#', 'href="../index.html#'),
              ('href="teses/', 'href="../teses/'),
              ('href="blog/', 'href="../blog/'),
              ('href="diagnostico.html"', 'href="../diagnostico.html"'),
@@ -204,11 +212,21 @@ def montar(meta, corpo_md, todos):
               '<span aria-hidden="true">›</span><a href="%s">%s</a></nav>'
               % ('../' + area_url, esc(area_nome)))
 
-    cta = ('<aside class="artigo-cta"><span class="eyebrow">Próximo passo</span>'
-           '<h2>%s</h2><p>%s</p><div class="cta-actions">'
+    # campo `tese`: liga o artigo (intencao de pesquisa) a pagina de servico (intencao de contratar)
+    servico = ''
+    if meta.get('tese'):
+        alvo = 'teses/%s.html' % meta['tese']
+        if os.path.exists(alvo):
+            h1 = re.search(r'<h1>(.*?)</h1>', open(alvo, encoding='utf-8').read(), re.S)
+            if h1:
+                servico = ('<p class="artigo-cta-servico">Saiba como a Êxito atua: '
+                           '<a href="../%s">%s</a>.</p>' % (alvo, h1.group(1)))
+
+    cta = (('<aside class="artigo-cta"><span class="eyebrow">Próximo passo</span>'
+           '<h2>%s</h2><p>%s</p>' + servico.replace('%', '%%') + '<div class="cta-actions">'
            '<a class="btn-gold" href="%s" target="_blank" rel="noopener">Falar com advogado</a>'
            '<a class="btn-outline" href="../diagnostico.html">Enviar meus dados</a>'
-           '</div></aside>' % (esc(meta.get('cta_titulo', 'Quer saber se o seu caso tem caminho?')),
+           '</div></aside>') % (esc(meta.get('cta_titulo', 'Quer saber se o seu caso tem caminho?')),
                                esc(meta.get('cta_texto',
                                    'Envie o que aconteceu e a equipe da Êxito indica quais '
                                    'documentos separar e qual o próximo passo.')),
@@ -269,6 +287,22 @@ def atualizar_indice(artigos):
     t = t.replace('<div class="blog-cards">', '<div class="blog-cards">' + cards, 1)
     open(caminho, 'w', encoding='utf-8', newline='\n').write(t)
     print('blog/index.html: %d artigos no topo da listagem' % len(artigos))
+
+    # home: a secao "Conteudo" mostra sempre os tres artigos mais recentes
+    recentes = sorted(artigos, key=lambda m: (m['publicado'], m['slug']), reverse=True)[:3]
+    cards_home = ''.join(
+        '<a class="article-card" href="blog/%s.html"><span class="eyebrow">%s</span>'
+        '<h3>%s</h3><p>%s</p></a>'
+        % (m['slug'], esc(m.get('eyebrow', 'Artigo')), esc(m['h1']), esc(m['resumo']))
+        for m in recentes)
+    home = open('index.html', encoding='utf-8').read()
+    home, trocou = re.subn(
+        r'(<span class="eyebrow">Conteúdo</span><h2>[^<]*</h2><p>[^<]*</p></div>'
+        r'<div class="blog-cards">).*?(</div></div></section>)',
+        lambda m: m.group(1) + cards_home + m.group(2), home, count=1, flags=re.S)
+    if trocou:
+        open('index.html', 'w', encoding='utf-8', newline='\n').write(home)
+        print('index.html: secao de artigos com os %d mais recentes' % len(recentes))
 
 
 def main():

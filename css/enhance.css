@@ -938,3 +938,85 @@ html,
     font-size: 25px;
   }
 }
+
+/* --- Menu "Areas de atuacao": mega-menu com as 8 areas --- */
+.header-inner {
+  position: relative;
+}
+
+.nav-item-dropdown.nav-areas {
+  position: static;
+}
+
+.mega-menu.mega-areas {
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1120px, calc(100vw - 48px));
+  min-width: 0;
+  padding: 30px 34px;
+  border-radius: 0 0 22px 22px;
+}
+
+.mega-areas-grade {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px 30px;
+}
+
+.mega-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav .mega-area a {
+  color: #3a342d !important;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 0;
+  white-space: normal;
+  line-height: 1.35;
+}
+
+.nav .mega-area a:hover {
+  color: #9d762c !important;
+}
+
+.nav .mega-area a.mega-area-titulo {
+  color: #9d762c !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e4d9c8;
+}
+
+.sector-title a.eyebrow:hover {
+  text-decoration: underline;
+}
+
+.footer-service-group h4 a {
+  color: inherit;
+}
+
+@media (max-width: 1100px) {
+  /* no celular a lista completa ficaria longa demais: o item leva para a grade da home */
+  .mega-menu.mega-areas {
+    display: none !important;
+  }
+}
+
+.artigo-cta .artigo-cta-servico {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 15px;
+  color: #bdb5a8;
+  margin: -12px 0 24px;
+}
+
+.artigo-cta .artigo-cta-servico a {
+  color: #e3c36d;
+  text-decoration: underline;
+}

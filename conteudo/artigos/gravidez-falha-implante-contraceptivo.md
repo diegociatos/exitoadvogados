@@ -6,6 +6,7 @@ descricao: Quando a gravidez com implante contraceptivo gera dever de indenizar,
 resumo: Nem toda gravidez com implante é erro médico — mas quando o dispositivo não foi inserido, a paciente não foi orientada ou o sangramento foi ignorado, a responsabilidade existe. Este guia mostra como a diferença é provada.
 eyebrow: Erro médico e responsabilidade civil
 area: saude
+tese: erro-medico
 assunto: Responsabilidade civil médica por falha em implante contraceptivo
 publicado: 2026-09-09
 atualizado: 2026-09-09
