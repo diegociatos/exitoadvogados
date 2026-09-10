@@ -804,3 +804,137 @@ html,
     font-size: 23px;
   }
 }
+
+/* --- Artigos gerados a partir de conteudo/artigos --- */
+.trilha {
+  max-width: 900px;
+  margin: 0 auto 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: #6f675f;
+}
+
+.trilha a {
+  color: #9d762c;
+}
+
+.trilha a:hover {
+  text-decoration: underline;
+}
+
+.trilha span {
+  color: #b8ac9a;
+}
+
+.article-data {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: #6f675f;
+  letter-spacing: .03em;
+  margin: 0 0 34px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e4d9c8;
+  text-align: left;
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 24px;
+  margin: 18px 0;
+}
+
+.article-body li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.article-body blockquote {
+  margin: 28px 0;
+  padding: 4px 0 4px 26px;
+  border-left: 3px solid #c9a14a;
+}
+
+.article-body blockquote p {
+  font-size: 21px;
+  line-height: 1.5;
+  color: #4a443c;
+  text-align: left;
+}
+
+.tabela-rolagem {
+  overflow-x: auto;
+  margin: 26px 0;
+  border: 1px solid #e4d9c8;
+  border-radius: 16px;
+}
+
+.tabela-rolagem table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.tabela-rolagem th,
+.tabela-rolagem td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid #efe6d6;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.tabela-rolagem tr:last-child td {
+  border-bottom: 0;
+}
+
+.tabela-rolagem th {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #9d762c;
+  background: #fdfaf4;
+}
+
+.artigo-cta {
+  margin: 48px 0 0;
+  padding: 40px;
+  background: #0b0b0b;
+  color: #fff;
+  border-radius: 24px;
+  border: 1px solid rgba(201, 161, 74, .3);
+}
+
+.artigo-cta h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 12px 0 14px;
+}
+
+.artigo-cta p {
+  color: #ded7cc;
+  text-align: left;
+  margin: 0 0 26px;
+}
+
+.artigo-cta .cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 720px) {
+  .artigo-cta {
+    padding: 28px 24px;
+    border-radius: 18px;
+  }
+
+  .artigo-cta h2 {
+    font-size: 25px;
+  }
+}

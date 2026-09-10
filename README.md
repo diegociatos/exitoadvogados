@@ -1,7 +1,8 @@
 # Êxito Advogados — site
 
-Site institucional e de captação da **Êxito Advogados**, marca do Grupo Ciatos voltada a pessoas
-físicas (patrimônio, recuperação financeira, previdência, saúde e indenizações).
+Site institucional e de captação da **Êxito Advogados**, escritório dedicado a pessoas físicas.
+A marca é independente e não deve exibir vínculo com outras marcas ou grupos: o posicionamento é
+de advocacia para o cidadão, com páginas por tese para capturar busca orgânica e gerar contato.
 
 - **Produção:** https://exitoadvogados.com.br
 - **Hospedagem:** Netlify, publicando a raiz do repositório. O domínio com `www` responde 301 para o
