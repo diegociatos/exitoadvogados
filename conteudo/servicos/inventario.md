@@ -8,6 +8,7 @@ resumo_card: Em cartório ou na Justiça, com partilha e ITCMD calculados.
 intro: Enquanto o inventário não é feito, os bens do falecido ficam travados: não podem ser vendidos, a conta não é liberada e o imposto acumula multa. Com acordo entre os herdeiros, dá para resolver em cartório em poucos meses.
 foto: reuniao-interna
 relacionados: uniao-estavel, divorcio, usucapiao, regularizacao-imoveis
+artigos: inventario-quanto-custa-quanto-demora
 cta_titulo: Um familiar faleceu e os bens precisam ser transferidos?
 cta_texto: Informe quem são os herdeiros, se há testamento, quais bens existem e se todos estão de acordo. A equipe indica se o inventário pode ser feito em cartório e estima os custos.
 ---

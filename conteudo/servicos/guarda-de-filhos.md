@@ -8,6 +8,7 @@ resumo_card: Guarda compartilhada ou unilateral, convivência e alienação pare
 intro: Guarda compartilhada não quer dizer que a criança mora uma semana com cada um. Entender essa diferença é o primeiro passo para chegar a um arranjo que funcione na prática.
 foto: planejamento-cliente
 relacionados: pensao-alimenticia, divorcio
+artigos: guarda-compartilhada-como-funciona
 cta_titulo: Está com dificuldade para ver seu filho ou para definir a guarda?
 cta_texto: Descreva como está a rotina hoje, se há decisão anterior e o que está impedindo a convivência. A equipe indica se é caso de acordo, de regulamentação ou de medida urgente.
 ---

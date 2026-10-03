@@ -8,6 +8,7 @@ resumo_card: Atraso, cancelamento, overbooking e bagagem extraviada.
 intro: A assistência no aeroporto é obrigatória e começa na primeira hora. Já a indenização por dano moral não é automática — depende do que você perdeu. Saber a diferença evita frustração.
 foto: planejamento-cliente
 relacionados: produto-com-defeito
+artigos: voo-atrasado-cancelado-direitos
 cta_titulo: Teve o voo atrasado, cancelado ou a bagagem extraviada?
 cta_texto: Guarde o cartão de embarque, os comprovantes de gastos e o que você perdeu por causa do problema — compromisso, diária, conexão. A equipe avalia o que pode ser cobrado.
 ---

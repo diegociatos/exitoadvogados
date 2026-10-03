@@ -8,6 +8,7 @@ resumo_card: Aparelhos queimados, alimentos perdidos e interrupções longas.
 intro: Um pico de energia queimou a geladeira, a televisão ou o equipamento de trabalho. A distribuidora responde por isso sem precisar ter culpa — mas o pedido precisa ser feito do jeito certo, antes de consertar ou jogar fora o aparelho.
 foto: equipe-trabalhando
 relacionados: multas-cemig-copasa, produto-com-defeito
+artigos: danos-morais-como-e-calculado
 cta_titulo: Seus aparelhos queimaram depois de uma oscilação ou queda de energia?
 cta_texto: Não descarte nem conserte os aparelhos antes de pedir o ressarcimento. Envie o protocolo do pedido à distribuidora e a resposta dela. A equipe avalia o próximo passo.
 ---

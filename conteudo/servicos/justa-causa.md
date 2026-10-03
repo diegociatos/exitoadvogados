@@ -8,6 +8,7 @@ resumo_card: Justa causa sem prova, desproporcional ou aplicada fora de hora.
 intro: Na justa causa, quem precisa provar é a empresa. Se ela não conseguir demonstrar a falta grave, a demissão vira dispensa sem justa causa — com todas as verbas que foram negadas.
 foto: reuniao-interna
 relacionados: verbas-rescisorias, assedio-moral
+artigos: justa-causa-quando-e-valida
 cta_titulo: Foi demitido por justa causa e acha que não houve motivo?
 cta_texto: Guarde a carta de dispensa, qualquer advertência ou suspensão anterior e as mensagens sobre o fato alegado. A equipe avalia se a empresa tem como provar o que diz.
 ---

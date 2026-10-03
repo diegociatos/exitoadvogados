@@ -8,6 +8,7 @@ resumo_card: Jornada real além do ponto, banco de horas irregular e intervalos.
 intro: Hora extra não paga raramente é só a hora. Ela reflete em férias, 13º, FGTS e aviso prévio — e cinco anos de reflexos somam valores que surpreendem.
 foto: equipe-trabalhando
 relacionados: verbas-rescisorias, assedio-moral
+artigos: horas-extras-como-calcular-e-provar
 cta_titulo: Trabalhava além do horário e isso não aparecia no contracheque?
 cta_texto: Informe sua jornada real, como era registrado o ponto e por quanto tempo isso aconteceu. A equipe estima o que pode ser cobrado.
 ---

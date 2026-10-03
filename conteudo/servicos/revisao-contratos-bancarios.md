@@ -8,6 +8,7 @@ resumo_card: Juros acima da média, tarifas proibidas e seguro embutido.
 intro: Nem todo juro alto é ilegal — mas juros muito acima da média de mercado, tarifas proibidas e seguros embutidos sem escolha podem ser revistos e devolvidos. A diferença está nos detalhes do contrato.
 foto: planejamento-cliente
 relacionados: dividas-bancarias, tarifas-bancarias, superendividamento
+artigos: revisao-financiamento-de-veiculo
 cta_titulo: Acha que está pagando mais do que deveria no financiamento ou empréstimo?
 cta_texto: Envie o contrato e o último extrato ou boleto. A equipe compara a taxa com a média de mercado da época e indica se a revisão compensa.
 ---

@@ -8,7 +8,7 @@ resumo_card: Pedido, revisão, cobrança de atrasados e prisão do devedor.
 intro: Pensão atrasada não é problema pequeno nem pode esperar. A lei dá ferramentas fortes para cobrar — inclusive a prisão do devedor —, mas elas têm prazo e forma certos.
 foto: atendimento-cliente
 relacionados: divorcio, guarda-de-filhos, uniao-estavel
-artigos: pensao-alimenticia-atrasada
+artigos: pensao-alimenticia-valor-como-e-definido, pensao-alimenticia-atrasada
 cta_titulo: A pensão está atrasada ou ainda nem foi fixada?
 cta_texto: Diga há quantos meses não há pagamento, se já existe decisão ou acordo e o que você sabe sobre a renda do outro genitor. A equipe indica a medida mais eficaz.
 ---

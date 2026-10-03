@@ -8,6 +8,7 @@ resumo_card: Transformar anos de posse em propriedade registrada, em cartório o
 intro: Quem mora há anos num imóvel sem escritura, pagando IPTU e cuidando dele como dono, pode ter o direito de registrá-lo em seu nome. O prazo exigido depende da modalidade — pode ser de cinco a quinze anos.
 foto: planejamento-cliente
 relacionados: regularizacao-imoveis, inventario, direito-imobiliario-contratual
+artigos: usucapiao-quanto-tempo-preciso
 cta_titulo: Mora ou usa um imóvel há anos e ele não está no seu nome?
 cta_texto: Informe há quanto tempo tem a posse, como começou — compra, herança, ocupação — e que documentos guarda. A equipe indica a modalidade de usucapião cabível e se dá para fazer em cartório.
 ---
