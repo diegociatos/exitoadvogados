@@ -8,6 +8,7 @@ resumo_card: Descontos no benefício que você não autorizou, com devolução e
 intro: Se aparece no seu extrato do INSS um desconto que você não reconhece, ele pode ser cancelado — e o que foi descontado, devolvido em dobro. O primeiro passo é descobrir de onde ele vem.
 foto: atendimento-cliente
 relacionados: superendividamento, tarifas-bancarias, revisao-contratos-bancarios
+artigos: descontos-associacao-beneficio-inss
 cta_titulo: Tem desconto no seu benefício que você não reconhece?
 cta_texto: Baixe o extrato de empréstimos pelo aplicativo Meu INSS e envie para a equipe. Em poucos minutos dá para identificar o que é contrato legítimo e o que não é.
 ---
@@ -22,7 +23,7 @@ O aposentado e o pensionista do INSS são o público mais visado por contrataç�
 
 **Margem estourada.** A lei limita o comprometimento do benefício com descontos consignados — atualmente 45%, divididos entre empréstimos e cartões. Descontos acima desse limite são irregulares.
 
-**Mensalidades de associações e sindicatos.** Descontos de entidades que o beneficiário nunca autorizou, muitas vezes de valores pequenos, que passam despercebidos por anos.
+**Mensalidades de associações e sindicatos.** Descontos de entidades que o beneficiário nunca autorizou, muitas vezes de valores pequenos, que passam despercebidos por anos. Depois da fraude que atingiu milhões de beneficiários entre 2019 e 2024, a **Lei nº 15.327, de 2026**, passou a proibir o desconto de mensalidade associativa diretamente no benefício. O INSS abriu um procedimento de ressarcimento, cujo prazo administrativo se encerrou em meados de 2026 — quem ficou de fora ainda pode cobrar os valores judicialmente.
 
 Nos quatro casos, cabe o **cancelamento** do desconto e a **devolução** dos valores. O Superior Tribunal de Justiça firmou o entendimento de que a devolução em dobro do que foi cobrado indevidamente não depende de má-fé do banco, bastando que a cobrança contrarie a boa-fé. Quando a contratação decorre de fraude, ainda cabe indenização por dano moral.
 
