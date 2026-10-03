@@ -8,6 +8,7 @@ resumo_card: TOI, recuperação de consumo, conta alta e corte indevido.
 intro: A concessionária encontrou "irregularidade no medidor" e mandou uma cobrança de milhares de reais, com ameaça de corte. Essa cobrança tem regras rígidas — e muitas vezes elas não foram seguidas.
 foto: planejamento-cliente
 relacionados: danos-eletricos, nome-negativado-indevidamente
+artigos: conta-de-luz-alta-cobranca-irregular
 cta_titulo: Recebeu cobrança por irregularidade no medidor ou ameaça de corte?
 cta_texto: Envie o Termo de Ocorrência e Inspeção, a carta de cobrança e as contas dos últimos meses. Não assine confissão de dívida antes da análise.
 ---

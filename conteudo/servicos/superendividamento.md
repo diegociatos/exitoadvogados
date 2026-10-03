@@ -8,6 +8,7 @@ resumo_card: Plano único de pagamento de até cinco anos, preservando o mínimo
 intro: Se o salário acaba antes do mês por causa de parcelas, você pode estar superendividado no sentido da lei. E a lei, desde 2021, obriga os credores a sentar à mesa.
 foto: planejamento-cliente
 relacionados: nome-negativado-indevidamente, golpe-pix-fraude-bancaria
+artigos: superendividamento-como-funciona
 cta_titulo: As dívidas estão comendo o salário antes do fim do mês?
 cta_texto: Faça uma lista com cada dívida, o credor, o valor da parcela e o saldo. A equipe verifica se você se enquadra na lei e como montar o plano.
 ---

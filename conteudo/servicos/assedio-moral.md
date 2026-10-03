@@ -8,6 +8,7 @@ resumo_card: Humilhação, perseguição, metas abusivas e isolamento no trabalh
 intro: Assédio moral não é um episódio isolado de grosseria. É um padrão repetido que desgasta, isola e adoece — e a empresa responde por ele, mesmo quando quem pratica é um gerente.
 foto: atendimento-cliente
 relacionados: justa-causa, verbas-rescisorias, acidente-de-trabalho
+artigos: assedio-moral-como-provar
 cta_titulo: Está sendo humilhado, isolado ou perseguido no trabalho?
 cta_texto: Não apague nada. Guarde mensagens, e-mails e anote datas, frases e quem estava presente. A equipe avalia se o que você vive se enquadra como assédio e como provar.
 ---

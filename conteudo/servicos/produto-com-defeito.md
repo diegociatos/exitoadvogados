@@ -8,6 +8,7 @@ resumo_card: Troca, conserto em 30 dias, devolução do dinheiro e prazos.
 intro: A loja tem trinta dias para consertar. Se não resolver, a escolha passa a ser sua — produto novo, dinheiro de volta ou desconto. E quem responde não é só o fabricante.
 foto: equipe-trabalhando
 relacionados: atraso-cancelamento-voo, nome-negativado-indevidamente
+artigos: produto-com-defeito-troca-ou-dinheiro
 cta_titulo: Comprou algo que veio com defeito e a loja não resolve?
 cta_texto: Guarde a nota fiscal, as ordens de serviço da assistência técnica e as mensagens trocadas. A equipe indica se já é hora de exigir troca ou devolução.
 ---

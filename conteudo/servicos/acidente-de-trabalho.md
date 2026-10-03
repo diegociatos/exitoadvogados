@@ -8,6 +8,7 @@ resumo_card: Estabilidade, CAT, benefício acidentário e indenização do empre
 intro: Um acidente de trabalho gera direitos em duas frentes ao mesmo tempo: perante o INSS e perante o empregador. A maioria das pessoas só conhece a primeira.
 foto: planejamento-cliente
 relacionados: assedio-moral, verbas-rescisorias
+artigos: acidente-de-trabalho-o-que-fazer
 cta_titulo: Sofreu acidente ou adoeceu por causa do trabalho?
 cta_texto: Informe o que aconteceu, se houve CAT e afastamento pelo INSS. A equipe avalia estabilidade, benefício e se cabe indenização do empregador.
 ---
