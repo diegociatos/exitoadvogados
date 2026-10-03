@@ -8,6 +8,7 @@ resumo_card: Atraso de obra, distrato, vícios construtivos e locação.
 intro: A construtora tem 180 dias de tolerância para entregar o imóvel. Depois disso, o atraso gera indenização — e, se você quiser desistir, a devolução do que pagou tem limites fixados em lei.
 foto: reuniao-interna
 relacionados: regularizacao-imoveis, usucapiao
+artigos: atraso-na-entrega-do-imovel-na-planta
 cta_titulo: A obra atrasou, você quer desistir ou o imóvel veio com defeito?
 cta_texto: Envie o contrato de compra, o cronograma prometido e os comprovantes de pagamento. A equipe calcula o que pode ser cobrado da construtora.
 ---

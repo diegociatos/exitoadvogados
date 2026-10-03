@@ -8,6 +8,7 @@ resumo_card: Cesta não contratada, seguro e capitalização embutidos na conta.
 intro: Toda conta corrente tem um pacote mínimo de serviços que o banco é obrigado a oferecer de graça. Se você paga uma cesta que nunca escolheu, pode estar pagando por algo que não precisava.
 foto: equipe-trabalhando
 relacionados: revisao-contratos-bancarios, consignado-indevido, dividas-bancarias
+artigos: tarifas-bancarias-indevidas
 cta_titulo: Paga tarifas na conta que nunca contratou?
 cta_texto: Separe os extratos dos últimos meses com as tarifas marcadas. A equipe identifica o que é cobrança indevida e quanto pode ser devolvido.
 ---

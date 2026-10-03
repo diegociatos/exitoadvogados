@@ -8,6 +8,7 @@ resumo_card: Reconhecimento, dissolução, partilha e herança do companheiro.
 intro: Morar junto, dividir as contas e ser visto como casal pode ter os mesmos efeitos de um casamento — inclusive na partilha e na herança. O problema é que, sem papel, é preciso provar.
 foto: equipe-trabalhando
 relacionados: divorcio, pensao-alimenticia
+artigos: uniao-estavel-como-provar
 cta_titulo: Viveu em união estável e precisa garantir seus direitos?
 cta_texto: Conte há quanto tempo vocês estão ou estiveram juntos, se há escritura ou contrato e quais bens foram adquiridos no período. A equipe avalia como provar a união e o que você pode reivindicar.
 ---

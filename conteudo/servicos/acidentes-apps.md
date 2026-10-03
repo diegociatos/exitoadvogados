@@ -8,6 +8,7 @@ resumo_card: Passageiro ou terceiro atingido: motorista, plataforma e seguro.
 intro: Quem se machuca numa corrida de aplicativo pode buscar reparação de mais de um responsável. A pergunta que decide o caso é quem responde por quê — e isso depende de você ser passageiro ou terceiro.
 foto: equipe-trabalhando
 relacionados: danos-eletricos, erro-medico
+artigos: acidente-passageiro-uber-99
 cta_titulo: Sofreu um acidente em corrida de aplicativo?
 cta_texto: Guarde o registro da corrida no aplicativo, o boletim de ocorrência e os documentos médicos. A equipe identifica os responsáveis e o que pode ser cobrado de cada um.
 ---

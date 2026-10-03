@@ -8,6 +8,7 @@ resumo_card: Em cartório, por acordo judicial ou litigioso — com partilha de 
 intro: Não é preciso que o outro concorde para o divórcio acontecer. O que muda com o acordo é o caminho, o prazo e o custo — e isso é o que vamos definir na primeira conversa.
 foto: reuniao-interna
 relacionados: pensao-alimenticia, guarda-de-filhos, uniao-estavel
+artigos: divorcio-em-cartorio-passo-a-passo
 cta_titulo: Decidiu se divorciar e quer saber qual é o caminho mais rápido no seu caso?
 cta_texto: Conte se existe acordo, se há filhos menores e quais bens estão em jogo. A equipe indica se dá para resolver em cartório e o que separar.
 ---

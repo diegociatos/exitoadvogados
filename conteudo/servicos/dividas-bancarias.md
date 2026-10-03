@@ -8,6 +8,7 @@ resumo_card: Execução, bloqueio de salário e busca e apreensão de veículo.
 intro: Quando o banco entra na Justiça, os prazos de defesa são curtos — quinze dias em muitos casos. O que se faz nesse intervalo define se a negociação vai acontecer nos termos do banco ou nos seus.
 foto: planejamento-cliente
 relacionados: revisao-contratos-bancarios, superendividamento, consignado-indevido
+artigos: execucao-bancaria-recebi-citacao
 cta_titulo: Recebeu citação, teve a conta bloqueada ou o carro apreendido?
 cta_texto: Informe a data em que recebeu a citação ou em que o bloqueio aconteceu e envie o contrato, se tiver. Prazos de defesa contra banco costumam ser de dias, não de meses.
 ---

@@ -8,6 +8,7 @@ resumo_card: Dívida inexistente, já paga ou não reconhecida nos cadastros.
 intro: Negativação indevida gera dano moral presumido: você não precisa provar que sofreu. Mas existe uma exceção importante que derruba muitos pedidos — e é bom conhecê-la antes.
 foto: atendimento-cliente
 relacionados: superendividamento, golpe-pix-fraude-bancaria
+artigos: nome-sujo-divida-que-nao-e-minha
 cta_titulo: Seu nome foi negativado por algo que você não deve?
 cta_texto: Tire o extrato do Serasa e do SPC, separe o comprovante de pagamento ou a prova de que não contratou. A equipe verifica se cabe indenização e pede a exclusão do registro.
 ---

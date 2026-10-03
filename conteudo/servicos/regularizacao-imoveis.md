@@ -8,6 +8,7 @@ resumo_card: Escritura, matrícula, averbação de construção e cadeia dominia
 intro: Um imóvel com documentação irregular não pode ser vendido com segurança, nem financiado, nem herdado sem dor de cabeça. Na maior parte dos casos, dá para resolver em cartório — o que falta é saber qual procedimento usar.
 foto: equipe-trabalhando
 relacionados: usucapiao, inventario, direito-imobiliario-contratual
+artigos: contrato-de-gaveta-como-regularizar
 cta_titulo: Tem um imóvel com documentação irregular?
 cta_texto: Envie a matrícula atualizada, se existir, e os documentos de compra que você tem. A equipe identifica o problema e o procedimento mais rápido para resolver.
 ---

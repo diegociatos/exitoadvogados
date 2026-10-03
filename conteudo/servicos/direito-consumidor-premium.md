@@ -8,6 +8,7 @@ resumo_card: Carro, viagem, móveis planejados e eventos que deram errado.
 intro: Quanto maior o valor da compra, maior o prejuízo quando o fornecedor falha — e maior a resistência dele em devolver. Nesses casos, a forma como a reclamação é feita desde o início muda o desfecho.
 foto: planejamento-cliente
 relacionados: produto-com-defeito, atraso-cancelamento-voo
+artigos: carro-zero-com-defeito
 cta_titulo: Uma compra ou serviço caro não foi entregue como prometido?
 cta_texto: Envie o contrato, os comprovantes de pagamento e as conversas com o fornecedor. A equipe indica se é caso de exigir o cumprimento, a troca ou a devolução integral.
 ---

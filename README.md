@@ -115,17 +115,28 @@ consentimento obrigatória apontando para a Política de Privacidade.
 > O primeiro envio a partir de um endereço de destino novo exige que a FormSubmit confirme o e-mail.
 > Se os formulários pararem de entregar, é o primeiro lugar a checar.
 
+## Manutenção do conteúdo
+
+O conteúdo jurídico envelhece. Alguns temas publicados aqui dependem de regras que mudam de ano em
+ano ou que estão em discussão — vale revisá-los periodicamente:
+
+| Tema | O que acompanhar |
+|---|---|
+| Aposentadoria | Os requisitos das regras de transição sobem **todo 1º de janeiro** |
+| BPC/LOAS | O limite de renda acompanha o salário mínimo, reajustado todo ano |
+| Licença-paternidade | Aumenta para 10 dias em 2027, 15 em 2028 e 20 em 2029 |
+| Trabalho por aplicativo | Há projetos de regulamentação em tramitação no Congresso |
+| Plano de saúde | Critérios de cobertura fora do rol fixados pelo STF na ADI 7.265 |
+| Pejotização | Tema sob análise do STF |
+
 ## Pendências
 
 1. **E-mail de contato da própria marca.** O endereço exibido no rodapé, na política de privacidade
    e usado como destino dos formulários ainda é o de outra marca. Criar um endereço no domínio
    `exitoadvogados.com.br`, confirmá-lo na FormSubmit e só então trocar em todas as páginas.
-2. **51 artigos antigos do blog repetem o mesmo texto.** Os corpos são de 97,8% a 99,8% idênticos
-   entre si. Estão `noindex`, fora do sitemap e fora da listagem do blog; continuam linkados apenas
-   pelas teses antigas. Devem ser substituídos por artigos reais, tema a tema, e então removidos.
-3. **As 17 teses antigas** (as páginas de serviço feitas antes do sistema de conteúdo) repetem as
-   mesmas 3 perguntas frequentes e parte do texto. O caminho é reescrevê-las como arquivos em
-   `conteudo/servicos/`, uma a uma.
+2. **Google Search Console.** Enviar o `sitemap.xml` e acompanhar a indexação. Depende de acesso do
+   titular do domínio.
+3. **Analytics.** Preencher `GA4_ID` em `js/analytics.js` para ligar a medição.
 4. **Confirmar a razão social** exibida no rodapé, na Política de Privacidade e nos Termos, e
    incluir o número de inscrição da sociedade na OAB.
 5. **Página "Sobre" e página de contato com mapa** ainda não existem.
@@ -133,5 +144,4 @@ consentimento obrigatória apontando para a Política de Privacidade.
    Federal da OAB: informativo, sem promessa de resultado, sem honorário exposto, sem linguagem
    mercantil.
 7. **Revisão jurídica.** Os textos de `conteudo/` foram escritos com base na legislação e na
-   jurisprudência vigentes em setembro de 2026 e devem ser revisados por advogado do escritório
-   antes da publicação.
+   jurisprudência vigentes em outubro de 2026 e devem ser revisados por advogado do escritório.

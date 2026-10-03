@@ -8,6 +8,7 @@ resumo_card: Prorrogação por frustração de safra, alongamento e execução d
 intro: O crédito rural tem regras próprias, mais protetivas que as do crédito comum. Quando a safra frustra ou o preço despenca, a prorrogação da dívida não é favor do banco — em muitos casos, é direito do produtor.
 foto: planejamento-cliente
 relacionados: dividas-bancarias, revisao-contratos-bancarios
+artigos: frustracao-de-safra-prorrogacao-divida-rural
 cta_titulo: A safra frustrou ou o banco está executando a cédula rural?
 cta_texto: Informe o tipo de financiamento, o que aconteceu com a produção e se já houve pedido de prorrogação. Envie a cédula e laudos ou comunicações que tiver.
 ---
