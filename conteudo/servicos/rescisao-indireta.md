@@ -8,7 +8,7 @@ resumo_card: Encerrar o contrato por falta grave da empresa, com todas as verbas
 intro: Pedir demissão faz você perder a multa de 40%, o saque do FGTS e o seguro-desemprego. Quando a falta grave é da empresa, existe outro caminho: a rescisão indireta, a "justa causa do empregador".
 foto: reuniao-interna
 relacionados: assedio-moral, verbas-rescisorias, horas-extras
-artigos: demitido-sem-justa-causa-direitos
+artigos: rescisao-indireta-como-funciona, demitido-sem-justa-causa-direitos
 cta_titulo: A empresa não paga em dia, não deposita o FGTS ou te trata de forma abusiva?
 cta_texto: Não peça demissão antes de conversar. Envie o extrato do FGTS, os contracheques e o que documenta a falta da empresa. A equipe avalia se o caso sustenta a rescisão indireta.
 ---

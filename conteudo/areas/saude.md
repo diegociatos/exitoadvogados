@@ -26,7 +26,7 @@ Nas duas situações, o paciente conta com o Código de Defesa do Consumidor, qu
 
 ### O plano pode negar um tratamento que não está no rol da ANS?
 
-Desde a Lei nº 14.454, de 2022, o rol da ANS é a referência básica, mas não o limite. Tratamentos fora da lista devem ser cobertos quando há comprovação de eficácia baseada em evidências científicas, recomendação de órgãos técnicos ou aprovação por agências de saúde reconhecidas, entre outros critérios. A negativa baseada apenas na ausência do procedimento no rol é frequentemente revertida.
+Pode, em muitos casos. Ao julgar a ADI 7.265, o Supremo Tribunal Federal fixou que a cobertura fora do rol é excepcional e depende de cinco requisitos presentes ao mesmo tempo: prescrição médica ou odontológica, inexistência de negativa da ANS ou de análise pendente sobre o tratamento, ausência de alternativa adequada dentro do rol, comprovação científica robusta de eficácia e segurança, e registro na Anvisa. A negativa só é revertida quando todos estão demonstrados, o que torna o relatório médico e a prova técnica decisivos.
 
 ### Em quanto tempo sai uma liminar contra o plano de saúde?
 

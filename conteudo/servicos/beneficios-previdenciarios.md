@@ -8,7 +8,7 @@ resumo_card: Aposentadoria, auxílio por incapacidade, BPC e pensão por morte.
 intro: O INSS nega, corta e calcula errado com frequência — e a decisão dele não é a última palavra. Na Justiça, a perícia é feita por médico independente e os atrasados são pagos desde o primeiro pedido.
 foto: reuniao-interna
 relacionados: limbo-previdenciario, acidente-de-trabalho
-artigos: inss-negou-beneficio-o-que-fazer
+artigos: inss-negou-beneficio-o-que-fazer, aposentadoria-2026-regras-de-transicao, bpc-loas-quem-tem-direito, revisao-da-vida-toda-encerrada
 cta_titulo: O INSS negou, cortou ou pagou menos do que devia?
 cta_texto: Envie a carta do INSS e o extrato do CNIS, que você baixa pelo aplicativo Meu INSS. A equipe identifica o motivo da negativa e o caminho mais rápido para revertê-la.
 ---
@@ -17,7 +17,7 @@ cta_texto: Envie a carta do INSS e o extrato do CNIS, que você baixa pelo aplic
 
 A atuação previdenciária se concentra em quatro frentes.
 
-**Aposentadorias.** Desde a Reforma da Previdência de 2019, a regra geral exige idade mínima — 62 anos para mulheres e 65 para homens — além do tempo de contribuição, com diversas regras de transição para quem já contribuía antes. Muitas negativas e muitos cálculos a menor decorrem de períodos que não foram computados: trabalho com registro falho no CNIS, tempo rural, tempo em atividade especial com exposição a agentes nocivos, serviço militar.
+**Aposentadorias.** Desde a Reforma da Previdência de 2019, a regra geral exige idade mínima — 62 anos para mulheres e 65 para homens — além do tempo de contribuição. Quem já contribuía antes da reforma pode se enquadrar em uma das quatro regras de transição, cujos requisitos sobem a cada ano: em 2026, são 93 pontos para mulheres e 103 para homens na regra de pontos, e 59 anos e 6 meses para mulheres e 64 anos e 6 meses para homens na regra de idade progressiva, além das duas regras de pedágio. Descobrir em qual regra você se encaixa, e qual delas paga mais, é a decisão mais importante antes de pedir o benefício. Muitas negativas e muitos cálculos a menor decorrem de períodos que não foram computados: trabalho com registro falho no CNIS, tempo rural, tempo em atividade especial com exposição a agentes nocivos, serviço militar.
 
 **Auxílio por incapacidade temporária e aposentadoria por incapacidade permanente.** A negativa quase sempre vem da perícia do INSS. Na Justiça, um perito nomeado pelo juiz reavalia o caso, e é comum que conclua de forma diferente.
 

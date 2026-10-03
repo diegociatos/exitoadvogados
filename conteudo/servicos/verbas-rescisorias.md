@@ -8,7 +8,7 @@ resumo_card: Rescisão atrasada, paga a menor ou não paga, com as multas legais
 intro: A empresa tem dez dias, a partir do fim do contrato, para pagar tudo. Passou disso, ela deve uma multa de um salário — além do que ficou pendente.
 foto: equipe-trabalhando
 relacionados: justa-causa, horas-extras, assedio-moral
-artigos: demitido-sem-justa-causa-direitos
+artigos: demitido-sem-justa-causa-direitos, trabalho-sem-carteira-assinada, licenca-paternidade-nova-lei
 cta_titulo: A rescisão atrasou, veio incompleta ou nem foi paga?
 cta_texto: Separe o termo de rescisão, os três últimos contracheques e o extrato do FGTS. A equipe confere o cálculo e indica quanto ficou faltando.
 ---

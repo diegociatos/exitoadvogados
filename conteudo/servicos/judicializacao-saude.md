@@ -8,6 +8,7 @@ resumo_card: Tratamento, cirurgia, remédio e home care negados — com liminar.
 intro: Quando o tratamento é urgente, a Justiça decide em dias — às vezes em horas. O que define a velocidade e a chance de sucesso é a qualidade do relatório médico que acompanha o pedido.
 foto: atendimento-cliente
 relacionados: erro-medico
+artigos: plano-de-saude-fora-do-rol-ans
 cta_titulo: O plano de saúde ou o SUS negou um tratamento que você precisa agora?
 cta_texto: Envie o pedido médico, o relatório e a negativa por escrito — o plano é obrigado a fornecê-la. Casos urgentes são analisados no mesmo dia.
 ---
@@ -16,7 +17,7 @@ cta_texto: Envie o pedido médico, o relatório e a negativa por escrito — o p
 
 A negativa de cobertura é o conflito mais comum entre pacientes e planos de saúde. Os motivos alegados costumam ser três: o procedimento não está no **rol da ANS**, o paciente ainda está em **carência**, ou o contrato **exclui** aquele tratamento.
 
-Nenhum desses motivos é absoluto. Desde a Lei nº 14.454, de 2022, o rol da ANS é a referência básica de cobertura, mas não o limite: tratamentos fora da lista devem ser cobertos quando há comprovação de eficácia à luz das evidências científicas, recomendação de órgãos técnicos de avaliação ou aprovação por agências de saúde de renome internacional. Em casos de **urgência e emergência**, a carência máxima é de 24 horas. E cláusulas que excluem o tratamento necessário a uma doença coberta pelo contrato são frequentemente consideradas abusivas.
+Nenhum desses motivos é absoluto, mas as regras mudaram. Ao julgar a **ADI 7.265**, o Supremo Tribunal Federal adotou a tese da *taxatividade mitigada*: o rol da ANS é a referência de cobertura e, fora dele, o plano só é obrigado a custear o tratamento quando estiverem presentes, **ao mesmo tempo**, cinco requisitos — prescrição do médico ou dentista responsável; inexistência de negativa expressa da ANS ou de análise pendente sobre aquele tratamento; ausência de alternativa terapêutica adequada já prevista no rol; comprovação de eficácia e segurança por evidência científica de alto nível; e registro na Anvisa. É um critério mais rigoroso que o da Lei nº 14.454, de 2022, e exige que o pedido judicial seja montado com essa lista em mãos. Em casos de **urgência e emergência**, a carência máxima continua sendo de 24 horas. E cláusulas que excluem o tratamento necessário a uma doença coberta pelo contrato são frequentemente consideradas abusivas.
 
 Outros problemas recorrentes são o **cancelamento do plano durante o tratamento** — o Superior Tribunal de Justiça decidiu que, mesmo em planos coletivos, a operadora deve manter a cobertura até a alta de quem está em tratamento de doença grave — e os **reajustes abusivos** por faixa etária ou em planos coletivos.
 
