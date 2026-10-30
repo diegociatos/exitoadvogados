@@ -8,7 +8,7 @@ resumo_card: Aposentadoria, auxílio por incapacidade, BPC e pensão por morte.
 intro: O INSS nega, corta e calcula errado com frequência — e a decisão dele não é a última palavra. Na Justiça, a perícia é feita por médico independente e os atrasados são pagos desde o primeiro pedido.
 foto: reuniao-interna
 relacionados: limbo-previdenciario, acidente-de-trabalho
-artigos: inss-negou-beneficio-o-que-fazer, aposentadoria-2026-regras-de-transicao, bpc-loas-quem-tem-direito, revisao-da-vida-toda-encerrada
+artigos: inss-negou-beneficio-o-que-fazer, salario-maternidade-prazo-30-dias, aposentadoria-2026-regras-de-transicao, bpc-loas-quem-tem-direito, revisao-da-vida-toda-encerrada
 cta_titulo: O INSS negou, cortou ou pagou menos do que devia?
 cta_texto: Envie a carta do INSS e o extrato do CNIS, que você baixa pelo aplicativo Meu INSS. A equipe identifica o motivo da negativa e o caminho mais rápido para revertê-la.
 ---
