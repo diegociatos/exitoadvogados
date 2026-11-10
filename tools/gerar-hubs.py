@@ -90,7 +90,7 @@ def montar(meta, corpo, servicos):
         '<link rel="icon" type="image/png" href="/images/favicon-512.png" sizes="512x512">',
         '<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">',
         '<meta name="theme-color" content="#080808">',
-        '<link rel="stylesheet" href="../css/enhance.css">',
+        '<link rel="stylesheet" href="../css/enhance.v2.css">',
         '<!-- schema:v2 -->',
         ''.join('<script type="application/ld+json">%s</script>'
                 % json.dumps(o, ensure_ascii=False, separators=(',', ':')) for o in ld),

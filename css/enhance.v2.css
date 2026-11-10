@@ -1020,3 +1020,10 @@ html,
   color: #e3c36d;
   text-decoration: underline;
 }
+
+/* Celular: alvos de toque de pelo menos 44px nos links do rodapé e nos rótulos
+   que levam a outra página (revisão mobile, nov/2026). Só área de toque; nenhum texto mudou. */
+@media (max-width:700px){
+  footer a { display:inline-flex; align-items:center; min-height:44px; }
+  a.eyebrow { display:inline-flex; align-items:center; min-height:44px; }
+}
